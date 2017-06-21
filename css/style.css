@@ -1,343 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
-/* line 3, ../scss/partials/_base.scss */
-.overlay {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  opacity: 0.5;
-  display: none;
-}
-
-/* line 11, ../scss/partials/_base.scss */
-.overlay.show {
-  display: block;
-}
-
-/* line 15, ../scss/partials/_base.scss */
-#messages {
-  display: inline-block;
-  float: left;
-}
-
-/* line 20, ../scss/partials/_base.scss */
-a .fa.fa-comments-o {
-  padding: 0.5em;
-  padding-top: 0.3em;
-  color: white;
-}
-
-/* line 28, ../scss/partials/_base.scss */
-* {
-  margin: 0;
-  padding: 0;
-}
-
-/* Overall settings */
-/* menu settings */
-/* line 36, ../scss/partials/_base.scss */
-nav {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  clear: both;
-  height: 54px;
-}
-
-/* line 44, ../scss/partials/_base.scss */
-nav span.title {
-  position: relative;
-  float: left;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-/* line 52, ../scss/partials/_base.scss */
-#hamburger {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  transition: .25s ease-in-out;
-  padding: 1em;
-  float: right;
-}
-
-/* line 61, ../scss/partials/_base.scss */
-#hamburger:hover {
-  cursor: pointer;
-}
-
-/* line 65, ../scss/partials/_base.scss */
-#hamburger span {
-  display: block;
-  position: relative;
-  width: 100%;
-  height: 5%;
-  margin-bottom: 35%;
-  -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  transform: rotate(0deg);
-  -webkit-transition: .25s ease-in-out;
-  -moz-transition: .25s ease-in-out;
-  -o-transition: .25s ease-in-out;
-  transition: .25s ease-in-out;
-}
-
-/* line 81, ../scss/partials/_base.scss */
-#hamburger #topbar {
-  top: 0;
-  left: 0;
-}
-
-/* line 86, ../scss/partials/_base.scss */
-#hamburger #botbar {
-  top: 0;
-  left: 0;
-  margin-bottom: 0;
-}
-
-/* line 92, ../scss/partials/_base.scss */
-#hamburger.open {
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-
-/* line 100, ../scss/partials/_base.scss */
-#hamburger.open #topbar {
-  position: relative;
-  left: 30%;
-  top: 18%;
-  width: 45%;
-  -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  -o-transform: rotate(90deg);
-  transform: rotate(90deg);
-}
-
-/* line 111, ../scss/partials/_base.scss */
-#hamburger.open #botbar {
-  position: relative;
-  left: 30%;
-  top: -18%;
-  width: 45%;
-  -webkit-transform: rotate(-90deg);
-  -moz-transform: rotate(-90deg);
-  -o-transform: rotate(-90deg);
-  transform: rotate(-90deg);
-}
-
-/* line 122, ../scss/partials/_base.scss */
-#barater {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  opacity: 0;
-  width: 300px;
-  transition: opacity .5s;
-}
-
-/* line 131, ../scss/partials/_base.scss */
-#barater p {
-  text-align: center;
-  padding: 0.5em 0 3em 0;
-}
-
-/* line 136, ../scss/partials/_base.scss */
-#barater.show {
-  opacity: 1;
-}
-
-/* line 140, ../scss/partials/_base.scss */
-#barater li {
-  border-top: 1px solid;
-  padding: 1em;
-}
-
-/* line 146, ../scss/partials/_base.scss */
-#barater a {
-  display: block;
-  text-decoration: none;
-}
-
-/* line 151, ../scss/partials/_base.scss */
-#barater .fa {
-  float: left;
-  padding-right: 1em;
-}
-
-/* line 156, ../scss/partials/_base.scss */
-#barater img {
-  display: block;
-  height: 120px;
-  width: 120px;
-  border-radius: 120px;
-  margin: 0 auto;
-  padding: 1em;
-}
-
-/* line 166, ../scss/partials/_base.scss */
-#barater i {
-  width: 25px;
-  text-align: center;
-}
-
-/* line 171, ../scss/partials/_base.scss */
-#menu {
-  position: fixed;
-  top: 54px;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: opacity .50s ease-in-out;
-  z-index: -1;
-}
-
-/* line 182, ../scss/partials/_base.scss */
-#menu.show {
-  opacity: 1;
-  z-index: 20;
-}
-
-/* line 187, ../scss/partials/_base.scss */
-#menu ul {
-  margin: 0 auto;
-  list-style: none;
-}
-
-/* line 192, ../scss/partials/_base.scss */
-#menu ul li {
-  border-bottom: 1px solid;
-  padding: 0.5em;
-  font-size: 1.125em;
-}
-
-/* line 198, ../scss/partials/_base.scss */
-#menu ul li i {
-  /*float: left;*/
-  padding: 0.3em;
-  padding-right: 1em;
-  text-align: center;
-  width: 32px;
-  height: 32px;
-  /*margin: 0 auto;*/
-}
-
-/* line 208, ../scss/partials/_base.scss */
-#menu ul li:last-child {
-  border-bottom: none;
-}
-
-/* line 212, ../scss/partials/_base.scss */
-#menu ul li a {
-  text-decoration: none;
-  transition: color 0.5s;
-}
-
-/* line 217, ../scss/partials/_base.scss */
-#menu ul li a:hover {
-  color: red;
-}
-
-/* line 221, ../scss/partials/_base.scss */
-.noscroll {
-  overflow: hidden;
-}
-
-/* line 225, ../scss/partials/_base.scss */
-.clearfix:after {
-  content: " ";
-  /* Older browser do not support empty content */
-  visibility: hidden;
-  display: block;
-  height: 0;
-  clear: both;
-}
-
-/* line 233, ../scss/partials/_base.scss */
-div.title {
-  padding: 1em;
-  padding-top: 0.7em;
-  padding-bottom: 0.7em;
-  margin-bottom: 1em;
-}
-
-/* line 240, ../scss/partials/_base.scss */
-div.title .fa-plus {
-  width: 24px;
-  height: 24px;
-  top: 50%;
-  left: 50%;
-  border-radius: 50%;
-  line-height: 24px;
-  text-align: center;
-}
-
-/* line 250, ../scss/partials/_base.scss */
-.right {
-  float: right;
-}
-
-/* line 254, ../scss/partials/_base.scss */
-main {
-  padding: 1em;
-  margin-top: 54px;
-}
-
-/* line 259, ../scss/partials/_base.scss */
-main p {
-  text-align: justify;
-}
-
-/* line 263, ../scss/partials/_base.scss */
-h1, h2, h3, h4 {
-  margin-bottom: 1em;
-}
-
-/* List */
-/* line 269, ../scss/partials/_base.scss */
-.list a {
-  text-decoration: none;
-}
-
-/* line 274, ../scss/partials/_base.scss */
-.list ul {
-  list-style: none;
-}
-
-/* line 278, ../scss/partials/_base.scss */
-.list ul li ul {
-  margin-bottom: 1px;
-  padding: 0.5em;
-}
-
-/* line 283, ../scss/partials/_base.scss */
-.list ul li ul li ul li {
-  float: right;
-  clear: both;
-  font-size: 0.875em;
-}
-
-/* line 289, ../scss/partials/_base.scss */
-.list ul li ul li ul li:first-child {
-  font-size: 1em;
-}
-
-/* line 293, ../scss/partials/_base.scss */
-.detail {
-  columns: 2;
-}
-
-/* line 297, ../scss/partials/_base.scss */
-.list img {
-  max-height: 50px;
-  max-width: 105px;
-  line-height: 82px;
-  float: left;
-}
-
 /* line 1, ../scss/partials/_colors.scss */
 body {
   background-color: #e0e0e0;
@@ -901,4 +562,349 @@ template {
 /* line 3, ../scss/partials/_typography.scss */
 body {
   font-family: 'Open Sans', sans-serif;
+}
+
+/* line 11, ../scss/partials/_typography.scss */
+#menu ul li {
+  font-size: 1.125em;
+}
+
+/* line 23, ../scss/partials/_typography.scss */
+.list ul li ul li ul li {
+  font-size: 0.875em;
+}
+/* line 26, ../scss/partials/_typography.scss */
+.list ul li ul li ul li:first-child {
+  font-size: 1em;
+}
+
+/* line 1, ../scss/partials/_structure.scss */
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  display: none;
+}
+
+/* line 9, ../scss/partials/_structure.scss */
+.overlay.show {
+  display: block;
+}
+
+/* line 13, ../scss/partials/_structure.scss */
+#messages {
+  display: inline-block;
+  float: left;
+}
+
+/* line 18, ../scss/partials/_structure.scss */
+a .fa.fa-comments-o {
+  padding: 0.5em;
+  padding-top: 0.3em;
+}
+
+/* line 23, ../scss/partials/_structure.scss */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Overall settings */
+/* menu settings */
+/* line 31, ../scss/partials/_structure.scss */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  clear: both;
+  height: 54px;
+}
+
+/* line 39, ../scss/partials/_structure.scss */
+nav span.title {
+  position: relative;
+  float: left;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* line 47, ../scss/partials/_structure.scss */
+#hamburger {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  transition: .25s ease-in-out;
+  padding: 1em;
+  float: right;
+}
+
+/* line 56, ../scss/partials/_structure.scss */
+#hamburger:hover {
+  cursor: pointer;
+}
+
+/* line 60, ../scss/partials/_structure.scss */
+#hamburger span {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 5%;
+  margin-bottom: 35%;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+/* line 76, ../scss/partials/_structure.scss */
+#hamburger #topbar {
+  top: 0;
+  left: 0;
+}
+
+/* line 81, ../scss/partials/_structure.scss */
+#hamburger #botbar {
+  top: 0;
+  left: 0;
+  margin-bottom: 0;
+}
+
+/* line 87, ../scss/partials/_structure.scss */
+#hamburger.open {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* line 95, ../scss/partials/_structure.scss */
+#hamburger.open #topbar {
+  position: relative;
+  left: 30%;
+  top: 18%;
+  width: 45%;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+/* line 106, ../scss/partials/_structure.scss */
+#hamburger.open #botbar {
+  position: relative;
+  left: 30%;
+  top: -18%;
+  width: 45%;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+/* line 117, ../scss/partials/_structure.scss */
+#barater {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  width: 300px;
+  transition: opacity .5s;
+}
+
+/* line 126, ../scss/partials/_structure.scss */
+#barater p {
+  text-align: center;
+  padding: 0.5em 0 3em 0;
+}
+
+/* line 131, ../scss/partials/_structure.scss */
+#barater.show {
+  opacity: 1;
+}
+
+/* line 135, ../scss/partials/_structure.scss */
+#barater li {
+  border-top: 1px solid;
+  padding: 1em;
+}
+
+/* line 141, ../scss/partials/_structure.scss */
+#barater a {
+  display: block;
+  text-decoration: none;
+}
+
+/* line 146, ../scss/partials/_structure.scss */
+#barater .fa {
+  float: left;
+  padding-right: 1em;
+}
+
+/* line 151, ../scss/partials/_structure.scss */
+#barater img {
+  display: block;
+  height: 120px;
+  width: 120px;
+  border-radius: 120px;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+/* line 161, ../scss/partials/_structure.scss */
+#barater i {
+  width: 25px;
+  text-align: center;
+}
+
+/* line 166, ../scss/partials/_structure.scss */
+#menu {
+  position: fixed;
+  top: 54px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity .50s ease-in-out;
+  z-index: -1;
+}
+
+/* line 177, ../scss/partials/_structure.scss */
+#menu.show {
+  opacity: 1;
+  z-index: 20;
+}
+
+/* line 182, ../scss/partials/_structure.scss */
+#menu ul {
+  margin: 0 auto;
+  list-style: none;
+}
+
+/* line 187, ../scss/partials/_structure.scss */
+#menu ul li {
+  border-bottom: 1px solid;
+  padding: 0.5em;
+}
+
+/* line 192, ../scss/partials/_structure.scss */
+#menu ul li i {
+  /*float: left;*/
+  padding: 0.3em;
+  padding-right: 1em;
+  text-align: center;
+  width: 32px;
+  height: 32px;
+  /*margin: 0 auto;*/
+}
+
+/* line 202, ../scss/partials/_structure.scss */
+#menu ul li:last-child {
+  border-bottom: none;
+}
+
+/* line 206, ../scss/partials/_structure.scss */
+#menu ul li a {
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+/* line 211, ../scss/partials/_structure.scss */
+#menu ul li a:hover {
+  color: red;
+}
+
+/* line 215, ../scss/partials/_structure.scss */
+.noscroll {
+  overflow: hidden;
+}
+
+/* line 219, ../scss/partials/_structure.scss */
+.clearfix:after {
+  content: " ";
+  /* Older browser do not support empty content */
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+/* line 227, ../scss/partials/_structure.scss */
+div.title {
+  padding: 1em;
+  padding-top: 0.7em;
+  padding-bottom: 0.7em;
+  margin-bottom: 1em;
+}
+
+/* line 234, ../scss/partials/_structure.scss */
+div.title .fa-plus {
+  width: 24px;
+  height: 24px;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  line-height: 24px;
+  text-align: center;
+}
+
+/* line 244, ../scss/partials/_structure.scss */
+.right {
+  float: right;
+}
+
+/* line 248, ../scss/partials/_structure.scss */
+main {
+  padding: 1em;
+  margin-top: 54px;
+}
+
+/* line 253, ../scss/partials/_structure.scss */
+main p {
+  text-align: justify;
+}
+
+/* line 257, ../scss/partials/_structure.scss */
+h1, h2, h3, h4 {
+  margin-bottom: 1em;
+}
+
+/* List */
+/* line 263, ../scss/partials/_structure.scss */
+.list a {
+  text-decoration: none;
+}
+
+/* line 268, ../scss/partials/_structure.scss */
+.list ul {
+  list-style: none;
+}
+
+/* line 272, ../scss/partials/_structure.scss */
+.list ul li ul {
+  margin-bottom: 1px;
+  padding: 0.5em;
+}
+
+/* line 277, ../scss/partials/_structure.scss */
+.list ul li ul li ul li {
+  float: right;
+  clear: both;
+}
+
+/* line 283, ../scss/partials/_structure.scss */
+.detail {
+  columns: 2;
+}
+
+/* line 287, ../scss/partials/_structure.scss */
+.list img {
+  max-height: 50px;
+  max-width: 105px;
+  line-height: 82px;
+  float: left;
 }

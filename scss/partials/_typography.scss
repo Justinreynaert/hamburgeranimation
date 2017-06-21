@@ -3,3 +3,34 @@
 body {
   font-family: 'Open Sans', sans-serif;
 }
+
+//menu
+
+#menu {
+  ul {
+    li {
+      font-size: 1.125em;
+    }
+  }
+}
+
+.list {
+  ul {
+    li {
+      ul {
+        li {
+          ul {
+            li {
+              font-size: 0.875em;
+
+              &:first-child {
+
+                font-size: $regular-size;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
