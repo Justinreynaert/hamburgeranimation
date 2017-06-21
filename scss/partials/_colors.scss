@@ -1,0 +1,102 @@
+body {
+  background-color: $background-color;
+}
+
+// barater menu
+#barater {
+  background-color: $brokenwhite;
+  color: $darkgrey;
+
+  a {
+    color: $darkgrey;
+  }
+
+  li {
+    border-top-color: $background-color;
+  }
+
+}
+
+// navigation
+nav {
+  background-color: $mainblue;
+
+  span.title {
+    color: $white;
+  }
+
+  #messages {
+
+    a .fa.fa-comments-o {
+      color: $white;
+    }
+    
+  }
+}
+
+// menu colors
+#menu {
+  background-color: white;
+
+  ul li {
+    border-bottom-color: $background-color;
+
+    a {
+      color: $darkgrey;
+    }
+
+    i {
+      color: $darkgrey;
+    }
+  }
+}
+
+#hamburger {
+  span {
+    background-color: $white;
+  }
+}
+
+//classes
+.overlay {
+  background-color: $black;
+}
+
+div.title {
+  background-color: $white;
+  color: $mainblue;
+
+  .fa-plus {
+    background-color: $brown;
+    color: $mainblue;
+  }
+}
+
+.list {
+  ul {
+
+    li {
+
+      ul {
+        background-color: $white;
+
+        li {
+
+          ul {
+
+            li {
+
+              color: $darkgrey;
+
+              &:first-child {
+
+                color: $mainblue;
+              }
+            }
+          }
+
+        }
+      }
+    }
+  }
+}
